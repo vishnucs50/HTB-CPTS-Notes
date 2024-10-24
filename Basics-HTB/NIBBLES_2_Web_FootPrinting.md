@@ -18,7 +18,7 @@ http://10.129.163.241 [200 OK] Apache[2.4.18], Country[RESERVED][ZZ], HTTPServer
     - Just prints a Hello world message
 2. Insptect the page source.<br>
     ![Alt text](image-4.png)
-    - hints at a `\nibbleblog\` dir
+    - hints at a `/nibbleblog/` dir
     - Can also inspect using cURL:
     ```sh
     $ curl 10.129.163.241         
@@ -176,4 +176,13 @@ http://10.129.163.241 [200 OK] Apache[2.4.18], Country[RESERVED][ZZ], HTTPServer
     ```
     - there is an email address **admin@nibbles.com**. There also 2 mention of **nibbles**
         - Can `nibbles` be the password?
+14. What do we have so far?
+    - We started with a simple nmap scan showing two open ports
+    - Discovered an instance of Nibbleblog
+    - Analyzed the technologies in use using whatweb
+    - Found the admin login portal page at admin.php
+    - Discovered that directory listing is enabled and browsed several directories
+    - Confirmed that admin was the valid username
+    - Uncovered clues that led us to a valid admin password of nibbles
+15. 
 
